@@ -1,4 +1,4 @@
-
+/* GLOBALES */
 *{
     font-family: 'Inter';
     font-weight: 400;
@@ -31,6 +31,9 @@ body::first-letter{
     justify-content: space-evenly;
     
 }
+
+/* MEDIA QUERYS */
+
 @media (max-width:780px){
     
     .contenedor{
@@ -87,8 +90,13 @@ body::first-letter{
         align-items: center;
         margin:0px;
     }
+    footer{
+        display: flex;
+    }
    
 }
+/* PRIMERA PARTE (ENTRADA) */
+
 .primera{
     display: flex;
     flex-direction: column;
@@ -100,23 +108,12 @@ body::first-letter{
 }
 
 
-.segunda{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
-    max-width: 100%;
-    margin:0px;
-    
-}
-
-
 .entrada-mensaje{
 
     border: none;
     color:#0a3871;
     background: #f3f5fc;
-    margin: 90px 20px 0px ;
+    margin: 70px 20px 0px ;
     text-transform: lowercase;
     font-size: 32px;
     height: 887px;
@@ -165,6 +162,17 @@ span{
 
 }
 
+/* SEGUNDA PARTE (SALIDA)*/
+
+.segunda{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 100%;
+    margin:0px;
+    
+}
 
 .salida-mensaje{
     background: #f3f5fc;
@@ -178,6 +186,7 @@ span{
     width: 744px;
     height: 865px;
     margin-bottom: 0;
+    margin-top: 70px;
     
     
 
