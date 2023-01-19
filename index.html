@@ -6,59 +6,51 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
     <title>Encriptador Alura Latam</title>
 </head>
 <body>
+    
+    
     <header class="encabezado">
         <h1><img src="./image/logo-alura.svg" alt="logo-alura" class="imagen-alura">Encriptador Alura</h1>
     </header>
+    
+    
     <main class="contenedor">
         <section class="primera"> 
            
-            <textarea  id="texto"class="entrada-mensaje" placeholder="Ingerese mensaje"></textarea>
+            <textarea  id="mensajeEntrada"class="entrada-mensaje" placeholder="Ingerese mensaje"></textarea>
             
             <div>
                 <span class="exclamacion"><img src="./image/bi_exclamation-circle-fill.svg" alt="exclamacion">Solo letras minusculas y sin acento</span>
-               <div class="botones">
+                <div class="botones">
 
-                <button class="encriptar btn">
+                    <button class="encriptar btn" id="encriptar">
                     Encriptar
-                </button>
-                <button class="desencriptar btn">
+                    </button>
+                    <button class="desencriptar btn" id="desencriptar">
                     Desencriptar
-                </button>
+                    </button>
 
-               </div>
+                </div>
                 
             </div>
         </section>   
         <section class="segunda">  
-            <textarea id="mensaje"  class="salida-mensaje"></textarea>
+            <textarea id="mensajeSalida"  class="salida-mensaje"></textarea>
 
-            <div class="textos">
+            <div class="textos" id="textos">
                 <p>Ningun mensaje fue encontrado</p>
                 <p>Ingresa el texto que desea encriptar/desencriptar</p>    
             </div>
-            <button class="copiar btn">
+            <button class="copiar btn" id="copiar">
                 Copiar
             </button>
             
             
         </section> 
-
-    
     </main>
-    
-            
-   
-
-    
-
-    
-    
-        
-            
-        
 
 </body>
 </html>
